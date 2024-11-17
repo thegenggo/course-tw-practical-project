@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Practical Tailwind for Web Design</title>
+  </head>
+  <body>
+    <nav class="flex container mx-auto h-14 justify-end px-4 py-2 font-heboo">
+      <div class="content-center">
+        <div class="group md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <div class="relative">
+            <ul
+              class="absolute right-0 bg-white hidden group-hover:block md:flex text-xl font-medium text-right me-1 rounded shadow-lg overflow-hidden z-30"
+            >
+              <li>
+                <a class="block px-4 py-2 hover:bg-gray-200" href="#">Works</a>
+              </li>
+              <li>
+                <a class="block px-4 py-2 hover:bg-gray-200" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="block px-4 py-2 hover:bg-gray-200" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="hidden md:flex text-xl font-medium space-x-8">
+          <li>
+            <a href="#">Works</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="font-heboo">
+      <div>
+        <div class="container mx-auto py-8 md:flex md:flex-row-reverse">
+          <div class="md:w-7/12 content-center">
+            <div class="relative size-44 md:size-60 mx-auto">
+              <img
+                class="absolute object-cover rounded-full size-44 md:size-60 content-center mx-auto z-10"
+                src="assets/profile.png"
+                alt="profile"
+              />
+              <div
+                class="absolute size-44 md:size-60 bg-sky-50 rounded-full top-3 right-1 z-0"
+              ></div>
+            </div>
+          </div>
+          <div class="text-center md:text-start md:w-5/12">
+            <h1 class="mt-9 font-bold text-4xl px-4 md:px-0">
+              Hi, I am John, Creative Technologist
+            </h1>
+            <p class="text-base mt-6 px-2 md:px-0">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button
+              type="button"
+              class="block mx-auto md:mx-0 bg-red-500 px-5 py-4 text-white text-xl mt-7 font-medium rounded hover:bg-red-600 transition-colors"
+            >
+              Download Resume
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-sky-50 px-2 pb-10">
+        <div class="container mx-auto">
+          <div class="md:flex justify-between content-center py-4">
+            <h2 class="text-lg text-center md:text-start">Recent posts</h2>
+            <a class="text-cyan-500 hidden md:block" href="#">View All</a>
+          </div>
+          <div
+            class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0"
+          >
+            <div class="bg-white rounded-md px-8 py-6">
+              <div class="font-bold text-2xl md:text-3xl">
+                Making a design system from scratch
+              </div>
+              <div class="mt-3">12 Feb 2020 | Design, Pattern</div>
+              <div class="mt-3">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </div>
+            </div>
+            <div class="bg-white rounded-md px-8 py-6">
+              <div class="font-bold text-2xl md:text-3xl">
+                Creating pixel perfect icons in Figma
+              </div>
+              <div class="mt-3">12 Feb 2020 | Design, Pattern</div>
+              <div class="mt-3">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container mx-auto px-4">
+          <h5
+            class="text-lg md:text-2xl text-center md:text-start py-4 md:py-6"
+          >
+            Featured works
+          </h5>
+          <div class="pb-4 md:grid md:grid-cols-12 border-b">
+            <img
+              class="rounded-md md:col-span-3"
+              src="assets/image1.png"
+              alt=""
+            />
+            <div class="ps-4 md:col-span-9">
+              <h1 class="font-bold text-2xl mt-4 md:mt-0 text-slate-900">
+                Designing Dashboards
+              </h1>
+              <div class="flex mt-4 space-x-5">
+                <div
+                  class="block rounded-2xl bg-blue-950 font-black text-white px-2"
+                >
+                  2020
+                </div>
+                <div class="text-slate-500">Dashboard</div>
+              </div>
+              <p class="mt-6 text-slate-900">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="pt-8 pb-4 hidden md:grid md:grid-cols-12 border-b">
+            <img
+              class="rounded-md md:col-span-3"
+              src="assets/image2.png"
+              alt=""
+            />
+            <div class="ps-4 md:col-span-9">
+              <h1 class="font-bold text-2xl mt-4 md:mt-0 text-slate-900">
+                Vibrant Portraits of 2020
+              </h1>
+              <div class="flex mt-4 space-x-5">
+                <div
+                  class="block rounded-2xl bg-blue-950 font-black text-white px-2"
+                >
+                  2018
+                </div>
+                <div class="text-slate-500">Illustration</div>
+              </div>
+              <p class="mt-6 text-slate-900">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="pt-8 pb-4 hidden md:grid md:grid-cols-12 border-b">
+            <img
+              class="rounded-md md:col-span-3"
+              src="assets/image3.png"
+              alt=""
+            />
+            <div class="ps-4 md:col-span-9">
+              <h1 class="font-bold text-2xl mt-4 md:mt-0 text-slate-900">
+                36 Days of Malayalam type
+              </h1>
+              <div class="flex mt-4 space-x-5">
+                <div
+                  class="block rounded-2xl bg-blue-950 font-black text-white px-2"
+                >
+                  2018
+                </div>
+                <div class="text-slate-500">Typography</div>
+              </div>
+              <p class="mt-6 text-slate-900">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="py-2 md:mt-8 md:mb-4">
+            <h4 class="text-2xl text-center py-2">Contact Me</h4>
+          </div>
+          <form
+            class="flex flex-col border border-slate-400 rounded-lg p-6 space-y-6"
+            action=""
+          >
+            <div>
+              <label class="block" for="name">Name</label>
+              <input
+                class="w-full border border-slate-400 rounded-lg px-4 py-3 mt-2"
+                name="name"
+                type="text"
+                placeholder="Value"
+              />
+            </div>
+            <div>
+              <label class="block" for="surname">Surname</label>
+              <input
+                class="w-full border border-slate-400 rounded-lg px-4 py-3 mt-2"
+                name="surname"
+                type="text"
+                placeholder="Value"
+              />
+            </div>
+            <div>
+              <label class="block" for="email">Email</label>
+              <input
+                class="w-full border border-slate-400 rounded-lg px-4 py-3 mt-2"
+                name="email"
+                type="text"
+                placeholder="Value"
+              />
+            </div>
+            <div>
+              <label class="block" for="message">Message</label>
+              <textarea
+                class="resize-y w-full border border-slate-400 rounded-lg px-4 py-3 mt-2"
+                name="message"
+                type="text"
+                placeholder="Value"
+              ></textarea>
+            </div>
+            <button
+              class="text-white rounded-lg bg-red-500 px-4 py-3 font-bold hover:bg-red-700 transition-colors"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mt-24 mb-4">
+        <div class="flex justify-center space-x-9">
+          <svg
+            class="size-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
+            />
+          </svg>
+          <svg
+            class="size-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            />
+          </svg>
+          <svg
+            class="size-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+            />
+          </svg>
+          <svg
+            class="size-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+            />
+          </svg>
+        </div>
+        <div class="text-center mt-7">Copyright ©2020 All rights reserved</div>
+      </div>
+    </main>
+  </body>
+</html>
